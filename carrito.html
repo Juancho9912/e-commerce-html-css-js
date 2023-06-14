@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waxboy Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script defer src="./js/carrito.js"></script>
+    <script defer src="./js/menu.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Waxboy Shop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Waxboy Shop</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i>Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Waxboy coder</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos desactivado">
+                    <!-- Llenamos con el js de carrito-->
+                </div>
+                <div id="carrito-acciones" class="carrito-acciones desactivado">
+                    <div class="carrito-acciones-izquierda"><button id="carrito-acciones-vaciar"
+                            class="carrito-acciones-vaciar">VACIAR CARRITO</button></button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p class="totalTexto">Total</p>
+                            <p class="total" id="total">$3000</p>
+                        </div>
+                        <button class="carrito-acciones-comprar" id="carrito-acciones-comprar">COMPRAR AHORA</button>
+                    </div>
+                </div>
+            </div>
+
+            <p id="carrito-comprado" class="carrito-comprado desactivado">Muchas gracias por tu compra. <i
+                    class="bi bi-emoji-laughing"></i></i></p>
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>
